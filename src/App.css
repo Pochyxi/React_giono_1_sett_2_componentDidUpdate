@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.b-comment {
+  width: 30%;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  height: 100vh;
+  overflow: auto;
+}
+.b-book-list {
+  max-width: 70%;
+}
+.b-comment-list {
+  font-size: .8rem!important;
+}
+.b-button-delete {
+  font-size: 1em!important;
+  padding: 0em .5em!important;
+}
