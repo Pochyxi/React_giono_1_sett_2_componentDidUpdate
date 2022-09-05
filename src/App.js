@@ -31,10 +31,7 @@ class App extends Component {
             setAsinBook={this.setAsinBook}
             books={fantasyBooks}
           />
-          <CommentArea
-            selected={this.state.selected}
-            asinBook={this.state.asinBook}
-          />
+          <CommentArea asinBook={this.state.asinBook} />
         </header>
       </div>
     );

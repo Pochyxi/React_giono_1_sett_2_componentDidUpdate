@@ -9,6 +9,16 @@ class AddComment extends Component {
       elementId: this.props.asin,
     },
   }
+  componentDidUpdate = (prevProp) => {
+    if (this.props.asin !== prevProp.asin) {
+      this.setState({
+        comment: {
+          ...this.state.comment,
+          elementId: this.props.asin,
+        }
+      })
+    }
+  }
 
   sendComment = async (e) => {
     e.preventDefault()
